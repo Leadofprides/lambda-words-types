@@ -8,6 +8,10 @@ export class WordsTypesService {
   baseTypesMap: TypesMap = {};
 
   constructor() {
+    this.buildInitialMaps();
+  }
+
+  private buildInitialMaps(): void {
     Object.keys(vocabulary).forEach((type: string) => {
       this.baseTypesMap[type] = 0;
       vocabulary[type].forEach((word: string) => {
