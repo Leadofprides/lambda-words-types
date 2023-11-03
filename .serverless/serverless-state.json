@@ -174,7 +174,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/lambda-words-types/prod/1699012868554-2023-11-03T12:01:08.554Z/lambda-words-types.zip"
+                "S3Key": "serverless/lambda-words-types/prod/1699026375994-2023-11-03T15:46:15.994Z/lambda-words-types.zip"
               },
               "Handler": "dist/serverless.handler",
               "Runtime": "nodejs18.x",
@@ -192,14 +192,14 @@
               "MainLogGroup"
             ]
           },
-          "MainLambdaVersionQweAY9LJF12jK2XPXa2ggluf7mYbt48FfUgud306M": {
+          "MainLambdaVersionf3zoilaIu9W4cI0NwLgJUCxNpgNgv2jMQbDouQfMx4": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "MainLambdaFunction"
               },
-              "CodeSha256": "0uOnoRDg5vRar+/TYap4I6Y0KlVSqQdxzJNpTlVxQC4="
+              "CodeSha256": "ulO1eSFmJ3lRrRnlzV66grzDwDlnsM3fa1nmjVCzJyc="
             }
           },
           "ApiGatewayRestApi": {
@@ -324,7 +324,7 @@
               "MainLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1699012840762": {
+          "ApiGatewayDeployment1699026337486": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -387,7 +387,7 @@
           "MainLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "MainLambdaVersionQweAY9LJF12jK2XPXa2ggluf7mYbt48FfUgud306M"
+              "Ref": "MainLambdaVersionf3zoilaIu9W4cI0NwLgJUCxNpgNgv2jMQbDouQfMx4"
             },
             "Export": {
               "Name": "sls-lambda-words-types-prod-MainLambdaFunctionQualifiedArn"
@@ -534,7 +534,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "MainLambdaVersionQweAY9LJF12jK2XPXa2ggluf7mYbt48FfUgud306M"
+        "versionLogicalId": "MainLambdaVersionf3zoilaIu9W4cI0NwLgJUCxNpgNgv2jMQbDouQfMx4"
       }
     },
     "configValidationMode": "warn",
@@ -557,7 +557,7 @@
     "artifact": "D:\\Projects\\lambda-words-types\\.serverless\\lambda-words-types.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/lambda-words-types/prod/1699012868554-2023-11-03T12:01:08.554Z",
+    "artifactDirectoryName": "serverless/lambda-words-types/prod/1699026375994-2023-11-03T15:46:15.994Z",
     "artifact": "lambda-words-types.zip"
   }
 }
